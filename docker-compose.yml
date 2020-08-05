@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+    api:
+        build: ./api
+        container_name: api
+        restart: always
+        ports: 
+            - "5000:80"
+
+
+    angular:
+        build: ./myapp
+        container_name: front
+        restart: always
+        ports:
+            - "80:4500"
