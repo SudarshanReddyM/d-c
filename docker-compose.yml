@@ -21,6 +21,8 @@ services:
             - "80:4500"
         links:
             - api
+        depends_on:
+            - api
         networks: 
             - test
 networks:
