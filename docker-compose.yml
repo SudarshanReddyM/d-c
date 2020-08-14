@@ -19,5 +19,3 @@ services:
             - "80:4500"
         networks: 
             - test
-networks:
-    - test
