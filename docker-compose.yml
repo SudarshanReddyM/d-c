@@ -7,6 +7,8 @@ services:
         restart: always
         ports: 
             - "5000:80"
+        networks: 
+                - test
 
 
     angular:
@@ -15,3 +17,5 @@ services:
         restart: always
         ports:
             - "80:4500"
+        networks: 
+            - test
